@@ -14,6 +14,7 @@ body {
 header {
     /* Color de fondo del encabezado */
     background-color: #546356;
+    font-family: "Kaushan Script", cursive;
     /* Color del texto en el encabezado */
     color: #0f1c10;
     /* Relleno interno del encabezado */
