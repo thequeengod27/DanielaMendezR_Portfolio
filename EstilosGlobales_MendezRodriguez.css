@@ -86,8 +86,8 @@ footer {
     max-width: 100px;
     }
  .slider-container {
-            max-width: 500px;
-            max-height: 300px;
+            max-width: 600px;
+            max-height: 400px;
             margin: 0 auto;
             position: relative;
             overflow: hidden;
@@ -95,14 +95,14 @@ footer {
         .slider-content {
             display: flex;
             transition: transform 1s ease;
-            width: 90%; /* Ajusta el ancho según el número de imágenes */
+            width: 100%; /* Ajusta el ancho según el número de imágenes */
         }
         .slider-item {
-            flex: 0 0 90%; /* Cada imagen ocupa el 100% del contenedor */
+            flex: 0 0 100%; /* Cada imagen ocupa el 100% del contenedor */
         }
         .slider-item img {
-            width: 50%; /* Las imágenes se ajustan al ancho del contenedor */
-            height: 50%;
+            width: 600px; /* Las imágenes se ajustan al ancho del contenedor */
+            height: 400px;
         }
         .prev, .next {
             cursor: pointer;
@@ -121,6 +121,9 @@ footer {
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
         }
         .prev:hover, .next:hover {
             background-color: rgba(0,0,0,0.8);
