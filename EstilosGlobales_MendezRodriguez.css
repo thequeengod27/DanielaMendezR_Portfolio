@@ -86,8 +86,8 @@ footer {
     max-width: 100px;
     }
  .slider-container {
-            max-width: 600px;
-            max-height: 400px;
+            max-width: 1000px;
+            max-height: 800px;
             margin: 0 auto;
             position: relative;
             overflow: hidden;
@@ -101,8 +101,8 @@ footer {
             flex: 0 0 100%; /* Cada imagen ocupa el 100% del contenedor */
         }
         .slider-item img {
-            width: 600px; /* Las imágenes se ajustan al ancho del contenedor */
-            height: 400px;
+            width: 1000px; /* Las imágenes se ajustan al ancho del contenedor */
+            height: 800px;
         }
         .prev, .next {
             cursor: pointer;
