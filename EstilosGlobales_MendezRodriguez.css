@@ -98,7 +98,7 @@ footer {
             width: 90%; /* Ajusta el ancho según el número de imágenes */
         }
         .slider-item {
-            flex: 0 0 100%; /* Cada imagen ocupa el 100% del contenedor */
+            flex: 0 0 90%; /* Cada imagen ocupa el 100% del contenedor */
         }
         .slider-item img {
             width: 50%; /* Las imágenes se ajustan al ancho del contenedor */
