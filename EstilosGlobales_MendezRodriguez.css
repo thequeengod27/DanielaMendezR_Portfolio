@@ -1,0 +1,208 @@
+/* Estilos globales para el cuerpo del documento */
+body {
+    /* Tipo de letra utilizado */
+    font-family: "Kaushan Script", cursive;
+    /* Elimina los márgenes y el relleno por defecto */
+    margin: 0;
+    padding: 0;
+    /* Color de fondo del sitio web */
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    /* Color de fondo del encabezado */
+    background-color: #546356;
+    font-family: "Ga Maamli", sans-serif;
+    /* Color del texto en el encabezado */
+    color: #0f1c10;
+    /* Relleno interno del encabezado */
+    padding: 1rem 0;
+    /* Alineación del texto en el centro */
+    text-align: center;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    /* Elimina el estilo de lista por defecto */
+    list-style-type: none;
+    /* Elimina el relleno interno */
+    padding: 0;
+    /* Alineación del texto en el centro */
+    text-align: center;
+    /* Color de fondo de la barra de navegación */
+    background-color: #444;
+    /* Elimina los márgenes */
+    margin: 0;
+}
+
+/* Estilos para los elementos de la lista en la barra de navegación */
+nav ul li {
+    /* Muestra los elementos en línea */
+    display: inline-block;
+    /* Elimina los márgenes */
+    margin: 0;
+    position: relative;
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+nav ul li a {
+    display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+/* Estilos para el contenido principal */
+main {
+    /* Relleno interno del contenido principal */
+    padding: 1rem;
+}
+
+/* Estilos para el pie de página */
+footer {
+    /* Color de fondo del pie de página */
+    background-color: #333;
+    /* Color del texto en el pie de página */
+    color: #fff;
+    /* Alineación del texto en el centro */
+    text-align: center;
+    /* Relleno interno del pie de página */
+    padding: 1rem 0;
+    /* Fija el pie de página en la parte inferior de la página */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.container {
+    overflow: auto;
+
+    }
+.container img {
+    float: left;
+    margin-right: 20px;
+    max-width: 100px;
+    }
+     .slider-container {
+            max-width: 1200px;
+            max-height: auto;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider-content {
+            display: flex;
+            transition: transform 1s ease;
+            width: 100%; /* Ajusta el ancho según el número de imágenes */
+        }
+        .slider-item {
+            flex: 0 0 100%; /* Cada imagen ocupa el 100% del contenedor */
+        }
+        .slider-item img {
+            width: 700px; /* Las imágenes se ajustan al ancho del contenedor */
+            height: 500px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: 0.5em;
+}
